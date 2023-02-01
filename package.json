@@ -1,16 +1,18 @@
 {
   "name": "planner",
   "version": "1.0.0",
-  "description": "virtual-keyboard-task",
+  "description": "task-planner",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tonywkx/virtual-keyboard.git"
+    "url": "git+https://github.com/tonywkx/task-planner.git"
   },
   "keywords": [
     "keyboard"
@@ -18,9 +20,9 @@
   "author": "TonyWKX <tonywk@ya.ru>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tonywkx/virtual-keyboard/issues"
+    "url": "https://github.com/tonywkx/task-planner/issues"
   },
-  "homepage": "https://github.com/tonywkx/virtual-keyboard#readme",
+  "homepage": "https://github.com/tonywkx/task-planner#readme",
   "devDependencies": {
     "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.7.1",
