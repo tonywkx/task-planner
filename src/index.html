@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планировщик</title>
+    <link rel="icon" href="./check.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body class="body">
+    <h1 class="title">Планировщик задач</h1>
+    <p class="subtitle">Задачи можно перетаскивать из бэклога</p>
+    <div class="container">
+        
+        <div class="planer">
+            <div class="planer-buttons">
+                <button class="scroll-button left-button" id="left">Left</button>
+                <button class="scroll-button" id="right">Right</button>
+            </div>
+            <div class="dates-container">
+                <div class="dates"></div>
+            </div>
+            <div class="template-container">
+                <ul class="user-container"></ul>
+                <div class="grid-container">
+                    <div class="planer-template" id="drop1" ></div>
+                </div>
+            </div>
+        </div>
+
+        <div class='backlog'>
+            <h3 class='backlog-title'>Backlog</h3>
+            <input type='text' id="input" placeholder="Поищем..." />
+            <ul class='task-container' id="drop2"  ></ul>
+        </div>
+    </div>   
+</body>
+</html>
