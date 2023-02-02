@@ -280,6 +280,15 @@ h1,p{
     opacity: 1;
 }
 
+@media (max-width: 1024px) {
+    .date{
+        width: 5rem;
+    }
+
+    .planer-template{
+        grid-template-columns: repeat(14, 5rem);
+    }
+  }
 
 @media (max-width: 770px) {
     .backlog{
